@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+	<title>
+		Quiz Login Page 
+	</title>
+	
+	<meta name="viewport" content="initial-scale = 1.0, width = device-width" /> 	
+	<link rel="stylesheet" href="../css/quiz_imports.css" title="main" media="all" />
+  </head>
+  
+  <body>
+  <header>
+	<h1>Quiz Login</h1>
+	<nav>
+	<ul>
+		<li><a href="index.html">Lectures</a>
+		</li>
+		<li><a href="exercise.html">Exercises</a>
+		</li>
+		<li><a href="quiz_login.html">Quizzes</a>
+		</li>
+		<li><a href="./index.html">Return to Project Intro</a>
+		</li>
+	</ul>
+	</nav>
+  </header>
+  
+  <main>
+	<form>
+		<h2>Please login</h2>
+		Student Number:
+		<input type="text" name="student_number" value="A00721829"> <br />
+		Password:
+		<input type="password" name="pass_word" value="*******"> <br /> <br />
+		<fieldset>
+			<legend>Quiz to take:</legend>
+			
+			<input type="radio" name="quizzes" value="quiz_1" checked="checked"> Quiz 1<br />
+			<input type="radio" name="quizzes" value="quiz_2"> Quiz 2<br />
+			<input type="radio" name="quizzes" value="quiz_3"> Quiz 3<br />
+			<input type="radio" name="quizzes" value="quiz_4"> Quiz 4<br />
+			<input type="radio" name="quizzes" value="quiz_5"> Quiz 5<br />
+		</fieldset> <br />
+		
+		<input type="submit" value="Login">
+		<input type="reset" value="Clear">
+	</form>
+  </main>
+  
+  <footer>
+  </footer>
+  </body>
+</html>
