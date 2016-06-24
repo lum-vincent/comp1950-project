@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Password Protected Area"
+AuthUserFile "/home/bcitcomp/public_html/students/jwong551/final/protosite/secure/.htpassword"
+Require valid-user

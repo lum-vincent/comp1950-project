@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+	<title>
+		Quiz 1
+	</title>
+	
+	<meta name="viewport" content="initial-scale = 1.0, width = device-width" /> 	
+	<meta name="description" content="COMP1950 Quiz 1 test form" />
+	
+	<link rel="stylesheet" href="../css/quiz_imports.css" title="main" media="all" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
+	
+	<script src="../js/countdown.js"> </script>
+	
+	
+  </head>
+  
+  <body>
+  <header>
+	<h1>Quiz 1</h1>
+	
+	<div id="clockdiv">
+		<h4>Time remaining:</h4>	
+		<div>
+		<span class="hours"></span>
+		<div class="smalltext">Hours</div>
+	  </div>
+	  <div>
+		<span class="minutes"></span>
+		<div class="smalltext">Minutes</div>
+	  </div>
+	  <div>
+		<span class="seconds"></span>
+		<div class="smalltext">Seconds</div>
+	  </div>
+	</div>
+	<br /> 
+  </header>
+  
+  <main>
+	<form method="post" action="quiz_end.html">
+		Student Number: 
+		<fieldset>
+			<legend><h2>Question 1:</h2></legend>
+			<p>Select the best answer. </p>
+			<input type="radio" name="qn_1_ans_opt_1"> The title tag is used in search engine optimization. <br />
+			<input type="radio" name="qn_1_ans_opt_2"> The aside tag is used in search engine optimization. <br />
+			<input type="radio" name="qn_1_ans_opt_3"> The meta tag keyword attribute is used in search engine optimization. <br />
+			<input type="radio" name="qn_1_ans_opt_4"> The footer tag is used in search engine optimization. <br />
+		</fieldset> <br />
+		
+		<fieldset>
+			<legend><h2>Question 2:</h2></legend> 
+			<p>The .htaccess file can be used to configure SSI capability on the server.</p> 
+			<input type="radio" name="qn_2_ans_opt_1"> True <br />
+			<input type="radio" name="qn_2_ans_opt_2"> False <br />
+		</fieldset> <br />
+	
+		<h2>Question 3:</h2>
+		<p>What does SSI stand for?</p>
+		<input type="text" name="qn_3_ans" value=""> <br />
+		
+		<h2>Question 4:</h2>
+		<p>What does WAMP stand for? </p>
+		<input type="text" name="qn_4_ans" value=""> <br />
+		
+		<h2>Question 5:</h2>
+		<p>Describe how priority is given to CSS. </p>
+		<input type="text" name="qn_5_ans" value=""> 
+		
+		<br /><br />
+		<input type="submit" value="Submit Quiz"> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="reset" value="Clear">
+	</form>
+  </main>
+  	
+  <footer>
+  <h2>References:</h2>
+  <ul>
+  <li><a href="https://www.sitepoint.com/build-javascript-countdown-timer-no-dependencies/">Countdown Timer </a></li>
+  </ul>
+  </footer>
+  </body>
+</html>
