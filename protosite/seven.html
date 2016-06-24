@@ -6,6 +6,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<link rel="stylesheet" type="text/css" href="../css/normalize.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="../css/common.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="../css/protosite_common.css" media="screen" >
 	<!-- <link rel="alternate stylesheet" href="" media="screen" title="Overhead" /> -->
 	<!-- <link rel="stylesheet" type="text/css" href="" media="print" /> -->
 
@@ -20,6 +21,8 @@
 <div id="titlebar">comp 1950 | intermediate web design and development</div>
 
 <div id="docBox">
+
+<nav id="toc"></nav>
 
 	<main>
 		<h1>lecture seven javascript frameworks</h1>
@@ -521,6 +524,26 @@
 		<!-- footer -->
 		<footer>
 			<a href="#top">Top of Page</a> | <a href="/comp1950/">Home</a>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
+			<script>
+				$("#toc").append('<p>In this article:</p>')
+				$( "h2" ).each(function(i) {
+			    var current = $(this);
+					var textNode;
+
+					current.attr("id", "title" + i);
+
+					if(current.html().match("^Exercise")) {
+						textNode = "E"
+					} else {
+						textNode = "L"
+					}
+					
+			    $("#toc").append("<a id='link" + i + "' href='#title" +
+			        i + "' title='" + current.attr("tagName") + "'>" +
+			        textNode + "</a>");
+			});
+			</script>
 		</footer>
 	</main>
 	<!--#include file="nav.html" -->
