@@ -1,13 +1,13 @@
 body {
   margin-right: 300px;
-  margin-left: 100px;
+  margin-left: 200px;
 }
 
 nav[id="toc"] {
   position: absolute;
   top: 100px;
   left: 0;
-  width: 100px;
+  width: 200px;
   padding: 10px 0 0 0;
 }
 
@@ -19,8 +19,16 @@ nav.nav--fixed {
 
 nav[id="toc"] a{
   display: inline-block;
-  width: 90px;
+  width: 190px;
   text-align: center;
   border: 1px solid black;
-  margin: 5px;
+  padding: 5px 0 5px 0;
+}
+
+.nav__a--exercise {
+  background-color: blue;
+}
+
+.nav__a--lesson {
+  background-color: green;
 }

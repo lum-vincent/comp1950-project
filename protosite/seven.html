@@ -525,39 +525,7 @@
 		<footer>
 			<a href="#top">Top of Page</a> | <a href="/comp1950/">Home</a>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
-			<script>
-
-				var exerciseNumber = 1;
-				var lessonNumber = 1;
-
-				$( "h2" ).each(function(i) {
-			    var current = $(this);
-					var textNode;
-					current.attr("id", "title" + i);
-
-					if(current.html().match("^Exercise")) {
-						textNode = "Exercise " + exerciseNumber;
-						exerciseNumber++;
-					} else {
-						textNode = "Lesson " + lessonNumber;
-						lessonNumber++;
-					}
-
-			    $("#toc").append("<a id='link" + i + "' href='#title" +
-			        i + "' title='" + current.attr("tagName") + "'>" +
-			        textNode + "</a>");
-				});
-
-				$(window).scroll( function () {
-					$heightOfHeader = 100;
-					if($(window).scrollTop() <= $heightOfHeader) {
-						$( "#toc" ).removeClass('nav--fixed');
-					} else {
-						$( "#toc" ).addClass('nav--fixed');
-					}
-				});
-
-			</script>
+			<script src="../js/protosite_page_nav.js"> </script>
 		</footer>
 	</main>
 	<!--#include file="nav.html" -->
