@@ -526,23 +526,37 @@
 			<a href="#top">Top of Page</a> | <a href="/comp1950/">Home</a>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
 			<script>
-				$("#toc").append('<p>In this article:</p>')
+
+				var exerciseNumber = 1;
+				var lessonNumber = 1;
+
 				$( "h2" ).each(function(i) {
 			    var current = $(this);
 					var textNode;
-
 					current.attr("id", "title" + i);
 
 					if(current.html().match("^Exercise")) {
-						textNode = "E"
+						textNode = "Exercise " + exerciseNumber;
+						exerciseNumber++;
 					} else {
-						textNode = "L"
+						textNode = "Lesson " + lessonNumber;
+						lessonNumber++;
 					}
-					
+
 			    $("#toc").append("<a id='link" + i + "' href='#title" +
 			        i + "' title='" + current.attr("tagName") + "'>" +
 			        textNode + "</a>");
-			});
+				});
+
+				$(window).scroll( function () {
+					$heightOfHeader = 100;
+					if($(window).scrollTop() <= $heightOfHeader) {
+						$( "#toc" ).removeClass('nav--fixed');
+					} else {
+						$( "#toc" ).addClass('nav--fixed');
+					}
+				});
+
 			</script>
 		</footer>
 	</main>

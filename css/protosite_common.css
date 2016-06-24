@@ -16,7 +16,11 @@ nav.nav--fixed {
   top: 0;
   left: 0;
 }
+
 nav[id="toc"] a{
-  display: block;
-  width: 100px;
+  display: inline-block;
+  width: 90px;
+  text-align: center;
+  border: 1px solid black;
+  margin: 5px;
 }
