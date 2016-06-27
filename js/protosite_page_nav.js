@@ -19,7 +19,7 @@ $( "h2" ).each(function(i) {
       $(this).html() + "</a>");
 });
 
-$( "nav a" ).each(function() {
+$( "#toc a" ).each(function() {
   var navClass;
 
   if($(this).text().match("^Exercise")) {
@@ -34,8 +34,10 @@ $( "nav a" ).each(function() {
 $(window).scroll( function () {
   $heightOfHeader = 100;
   if($(window).scrollTop() <= $heightOfHeader) {
-    $( "#toc" ).removeClass('nav--fixed');
+    $( "#toc" ).removeClass('nav--fixed--left');
+    $( ".nav--right").removeClass('nav--fixed--right');
   } else {
-    $( "#toc" ).addClass('nav--fixed');
+    $( "#toc" ).addClass('nav--fixed--left');
+    $( ".nav--right").addClass('nav--fixed--right');
   }
 });
