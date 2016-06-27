@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Password Protected Area"
-AuthUserFile "/home/bcitcomp/public_html/students/jwong551/final/protosite/secure/.htpassword"
+AuthUserFile "/home/bcitcomp/public_html/students/jwong551/final/protosite/secure/.htpasswd"
 Require valid-user
