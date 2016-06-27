@@ -1,7 +1,7 @@
 var exerciseNumber = 1;
 var lessonNumber = 1;
 
-$( "h2" ).each(function(i) {
+$( "article h2" ).each(function(i) {
   var current = $(this);
   var textNode;
   current.attr("id", "title" + i);

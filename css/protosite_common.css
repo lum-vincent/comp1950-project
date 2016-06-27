@@ -4,6 +4,7 @@ body {
   margin-right: 300px;
   margin-left: 200px;
 }
+
 body > header {
   padding: 10px;
   margin-left: 100px;
@@ -14,12 +15,13 @@ body > header {
   left:0;
 
 }
+
 nav[id="toc"] {
   position: absolute;
   top: 100px;
   left: 0;
   width: 200px;
-  padding: 10px 0 0 0;
+  padding: 10px 0 0 10px;
 }
 
 nav.nav--fixed--left {
@@ -70,8 +72,16 @@ nav[id="toc"] a{
   display:none;
 }
 
+h2 {
+  margin-bottom: 10px;
+}
+
 .nav--right h2 {
   padding: 5px;
   background-color: blue;
-  margin-bottom: 10px;
+}
+
+article > h2 {
+  padding: 5px;
+  background: green;
 }
