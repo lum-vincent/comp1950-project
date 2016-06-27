@@ -51,6 +51,10 @@ nav[id="toc"] a{
   background-color: green;
 }
 
+.nav__a--quiz {
+  background-color: red;
+}
+
 .nav--right {
   display: block;
   margin-left: 10px;

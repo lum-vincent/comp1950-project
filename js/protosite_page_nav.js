@@ -22,8 +22,10 @@ $( "article h2" ).each(function(i) {
 $( "#toc a" ).each(function() {
   var navClass;
 
-  if($(this).text().match("^Exercise")) {
+  if($(this).text().indexOf("Exercise") > -1) {
     navClass = "nav__a--exercise";
+  } else if($(this).text().indexOf("Quiz") > -1){
+    navClass = "nav__a--quiz";
   } else {
     navClass = "nav__a--lesson";
   }
