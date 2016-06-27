@@ -1,6 +1,18 @@
 body {
+  padding: 20px;
+  margin-top: 100px;
   margin-right: 300px;
   margin-left: 200px;
+}
+
+body > header {
+  padding: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  width:auto;
+  position: absolute;
+  top:0;
+  left:0;
 }
 
 nav[id="toc"] {
@@ -8,13 +20,19 @@ nav[id="toc"] {
   top: 100px;
   left: 0;
   width: 200px;
-  padding: 10px 0 0 0;
+  padding: 10px 0 0 10px;
 }
 
-nav.nav--fixed {
+nav.nav--fixed--left {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+nav.nav--fixed--right {
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 
 nav[id="toc"] a{
@@ -31,4 +49,52 @@ nav[id="toc"] a{
 
 .nav__a--lesson {
   background-color: green;
+}
+
+.nav--right {
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 280px;
+  position: absolute;
+  top: 100px;
+  right: 0px;
+}
+
+.nav--right a {
+  padding: 5px;
+  border: 1px solid black;
+  display: block;
+  background-color: grey;
+}
+
+.nav--right span {
+  display:none;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+.nav--right h2 {
+  padding: 5px;
+  background-color: blue;
+}
+
+.nav--right > nav h2:first-child {
+  margin-top: 10px;
+}
+
+article > h2,main > h2 {
+  padding: 5px;
+  background: green;
+}
+
+main > div, article > div {
+  padding: 10px;
+  border: 1px dashed grey;
+}
+
+.body__margin-left--none {
+  margin-left: 0;
 }
