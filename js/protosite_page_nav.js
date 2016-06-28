@@ -6,20 +6,12 @@ $( "article h2" ).each(function(i) {
   var textNode;
   current.attr("id", "title" + i);
 
-  if(current.html().match("^Exercise")) {
-    textNode = "Exercise " + exerciseNumber;
-    exerciseNumber++;
-  } else {
-    textNode = "Lesson " + lessonNumber;
-    lessonNumber++;
-  }
-
-  $("#toc").append("<a id='link" + i + "' href='#title" +
+  $("#toc").append("<li><a id='link" + i + "' href='#title" +
       i + "' title='" + current.attr("tagName") + "'>" +
-      $(this).html() + "</a>");
+      $(this).html() + "</a></li>");
 });
 
-$( "#toc a" ).each(function() {
+$( "#toc li a" ).each(function() {
   var navClass;
 
   if($(this).text().indexOf("Exercise") > -1) {
