@@ -1,3 +1,6 @@
+
+//Adding in dynamic links to the left navigation to assist navigation
+//over the page.
 var exerciseNumber = 1;
 var lessonNumber = 1;
 
@@ -11,27 +14,15 @@ $( "article h2" ).each(function(i) {
       $(this).html() + "</a></li>");
 });
 
-$( "#toc li a" ).each(function() {
-  var navClass;
+//Adding scroll bar to left nav
+var viewHeight = $( window ).height();
+$( "#toc" ).css("height", viewHeight)
+$( "#toc" ).css("overflow","auto");
 
-  if($(this).text().indexOf("Exercise") > -1) {
-    navClass = "nav__a--exercise";
-  } else if($(this).text().indexOf("Quiz") > -1){
-    navClass = "nav__a--quiz";
-  } else {
-    navClass = "nav__a--lesson";
-  }
+//Changing the right nav to be fixed position
+$(" nav.navbar-right" ).css({"position":"fixed","top":"0","right":"0"})
 
-  $(this).addClass(navClass);
-})
-
-$(window).scroll( function () {
-  $heightOfHeader = 100;
-  if($(window).scrollTop() <= $heightOfHeader) {
-    $( "#toc" ).removeClass('nav--fixed--left');
-    $( ".nav--right").removeClass('nav--fixed--right');
-  } else {
-    $( "#toc" ).addClass('nav--fixed--left');
-    $( ".nav--right").addClass('nav--fixed--right');
-  }
+//Adding in a toggle feature to the right nav
+$(" nav.navbar-right h2").click(function() {
+  $(this).next().slideToggle();
 });

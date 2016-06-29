@@ -5,12 +5,14 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="description" content="Prototype page for a typical lesson for comp 1950.">
 	<link rel="stylesheet" type="text/css" href="../css/normalize.css" media="screen" />
-	<link rel="stylesheet" type="text/css" href="../css/protosite_common.css" media="screen" >
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" media="screen" />
+ 	<!--<link rel="stylesheet" type="text/css" href="../css/protosite_common.css" media="screen" >-->
 </head>
-	<body class="body__margin-left--none">
-		<nav id="toc"></nav>
-		<nav class="nav--right"><!--#include file="nav.html"--></nav>
-
+<body class="container-fluid">
+	<nav class=" col-lg-2 navbar-left navbar-fixed-top"><ul class="nav nav-tabs nav-stacked"></ul></nav>
+	<nav class=" col-lg-2 navbar-right"><!--#include file="nav.html"--></nav>
+	<div class="col-lg-2"></div>
+	<main class="col-lg-8">
 		<header>
 			<a name="top"></a>
 			<h1>Comp 1950 - Splash Demonstration Page</h1>
@@ -24,7 +26,7 @@
   		catalogue at BCIT</a> to see when this course is running next.</p>
     </section>
 
-		<main>
+		<section>
       <h2>Course Description</h2>
       <div>
     		<p><b>COMP 1950</b> follows on from <a href="http://www.bcit.ca/study/courses/comp1850">COMP 1850</a> in more depth and introduces new topics and techniques for developing effective web sites.</p>
@@ -49,12 +51,13 @@
         	<li>Understand basic development methodology.</li>
         </ul>
       </div>
-		</main>
+		</section>
 
 		<footer>
 			<a href="#top">Top of Page</a> | <a href="/comp1950/">Home</a>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
 			<script src="../js/protosite_page_nav.js"> </script>
 		</footer>
+	</main>
 	</body>
 </html>
