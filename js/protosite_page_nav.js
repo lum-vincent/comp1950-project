@@ -16,11 +16,11 @@ $( "article h2" ).each(function(i) {
 
 //Adding scroll bar to left nav
 var viewHeight = $( window ).height();
-$( "#toc" ).css("height", viewHeight)
+$( "#toc" ).css("height", viewHeight);
 $( "#toc" ).css("overflow","auto");
 
 //Changing the right nav to be fixed position
-$(" nav.navbar-right" ).css({"position":"fixed","top":"0","right":"0"})
+$(" nav.navbar-right" ).css({"position":"fixed","top":"0","right":"0"});
 
 //Adding in a toggle feature to the right nav
 $(" nav.navbar-right h2").click(function() {
