@@ -1428,6 +1428,19 @@ ol ol {
   padding-left: 0;
   list-style: none;
 }
+.list-styled {
+  text-align: left;
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: square;
+}
+.list-styled > li {
+  padding-left: 10px;
+}
+.list-styled > li:not(:first-child) {
+  padding-top: 7px;
+}
+
 .list-inline {
   padding-left: 0;
   margin-left: -5px;
@@ -1976,7 +1989,7 @@ pre code {
   .col-md-pull-12 {
     right: 100%;
   }
-  .col-md-pull-11 {
+  .col-md-ll-11 {
     right: 91.66666667%;
   }
   .col-md-pull-10 {
