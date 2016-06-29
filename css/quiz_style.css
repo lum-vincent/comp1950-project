@@ -50,3 +50,17 @@ h4 {
     padding-top: 5px;
     font-size: 16px;
 }
+
+@media only print {
+  body {
+    width: 100%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  a:after {
+    content: " (URL: " attr(href) ") ";
+  }
+}
