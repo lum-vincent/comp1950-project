@@ -19,6 +19,9 @@ var viewHeight = $( window ).height();
 $( "#toc" ).css("height", viewHeight);
 $( "#toc" ).css("overflow","auto");
 
+$( "nav.navbar-right" ).css("height", viewHeight);
+$( "nav.navbar-right" ).css("overflow","auto");
+
 //Changing the right nav to be fixed position
 $(" nav.navbar-right" ).css({"position":"fixed","top":"0","right":"0"});
 
