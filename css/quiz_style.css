@@ -8,18 +8,18 @@ body{
 }
 
 h1{
-	font-size: 40px;
-	margin: 40px 0px 20px;
+	font-size: 40px !important;
+	margin: 40px 0px 20px !important;
 }
 
 h4 {
-	font-size: 20px;
+	font-size: 20px !important;
 	margin: 0;
 }
 
 #clockdiv{
 	position: fixed;
-	left: 64.25%;
+	left: 63%;
 	top: 2.5%;
 	text-align: center;
 	background: #808080;
@@ -33,14 +33,14 @@ h4 {
 }
 
 #clockdiv > div{
-    padding: 10px;
+    padding: 0 7px;
     border-radius: 3px;
     background: #808080;
     display: inline-block;
 }
 
 #clockdiv div > span{
-    padding: 15px;
+    padding: 7px;
     border-radius: 3px;
     background: #a9a9a9;
     display: inline-block;
