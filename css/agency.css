@@ -13,7 +13,7 @@ h2 {
 
 #toc {
 	text-align: center;
-	background-color: #fdc; /*#F58B4C;*/
+	background-color: #f0f6e1; /*#F58B4C;*/
 	position: fixed;
 	top: 80px;
 	left: 10px;
@@ -28,6 +28,7 @@ h2 {
 
 #toc>li>a:hover{
 	border-radius: 20px;
+	background-color: #93a75e;
 	color: royalblue;
 }
 
@@ -40,7 +41,7 @@ h2 {
 }
 
 .protosite-body {
-	background-color: #ffd; /*#B5C689*/
+	background-color: #ddeabe; /*#B5C689*/
 }
 
 .div--content, .contblock {
