@@ -6,17 +6,24 @@ h1{
 
 h2 {
 	border-radius: 5px;
-	background-color: #F58B4C
+	background-color: #929292;
+	color: white;
 }
 
 #toc {
 	margin-top: 5em;
 	text-align: center;
+	background-color: #F58B4C;
 }
 
 #toc>li>a{
 	border-radius: 20px;
-	color: #BCA136;
+	color: gold;
+}
+
+#toc>li>a:hover{
+	border-radius: 20px;
+	color: royalblue;
 }
 
 header{
@@ -24,10 +31,11 @@ header{
 }
 
 footer a{
-	color: #BCA136;
+	color: gold;
 }
 
 .div--content {
+	margin-top: -10px;
 	padding: 0.3em;
 	border-radius: 5px;
 	background-color: #f7f7f7
@@ -88,8 +96,8 @@ h5,
 h6 {
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    font-weight: 700
-    padding: 0.3em; /*Eu Ken: added padding*/
+    font-weight: 700'
+    padding:0 0.3em; /*Eu Ken: added padding*/
 }
 .img-centered {
     margin: 0 auto
