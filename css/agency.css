@@ -6,7 +6,7 @@ h1{
 
 h2 {
 	border-radius: 5px;
-	background-color: #929292;
+	background-color: #767676;
 	color: white;
 }
 
@@ -34,7 +34,7 @@ footer a{
 	color: gold;
 }
 
-.div--content {
+.div--content, .contblock {
 	margin-top: -10px;
 	padding: 0.3em;
 	border-radius: 5px;
