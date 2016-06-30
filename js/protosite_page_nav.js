@@ -16,3 +16,8 @@ $( "article h2" ).each(function(i) {
 
 var windowHeight = $ ( window ).height() - 80;
 $( " nav.navbar-left ul").css("height",windowHeight);
+
+$( window ).resize(function() {
+  var windowHeight = $ ( window ).height() - 80;
+  $( " nav.navbar-left ul").css("height",windowHeight);
+});
