@@ -44,7 +44,7 @@ footer a{
 
 body {
     overflow-x: hidden;
-    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background-color: #B5C689 /*Eu Ken: added background color*/
 }
 .text-muted {
