@@ -13,3 +13,6 @@ $( "article h2" ).each(function(i) {
       i + "' title='" + current.attr("tagName") + "'>" +
       $(this).html() + "</a></li>");
 });
+
+var windowHeight = $ ( window ).height() - 80;
+$( " nav.navbar-left ul").css("height",windowHeight);
