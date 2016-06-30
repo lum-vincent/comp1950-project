@@ -13,8 +13,3 @@ $( "article h2" ).each(function(i) {
       i + "' title='" + current.attr("tagName") + "'>" +
       $(this).html() + "</a></li>");
 });
-
-//Adding scroll bar to left nav
-var viewHeight = $( window ).height();
-$( "#toc" ).css("height", viewHeight);
-$( "#toc" ).css("overflow","auto");
