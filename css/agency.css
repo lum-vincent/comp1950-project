@@ -13,7 +13,7 @@ h2 {
 
 #toc {
 	text-align: center;
-	background-color: #F58B4C;
+	background-color: #fdc; /*#F58B4C;*/
 	position: fixed;
 	top: 80px;
 	left: 10px;
@@ -40,7 +40,7 @@ h2 {
 }
 
 .protosite-body {
-	background-color: #ffd;
+	background-color: #ffd; /*#B5C689*/
 }
 
 .div--content, .contblock {
