@@ -23,12 +23,12 @@ h2 {
 
 #toc>li>a{
 	border-radius: 20px;
-	color: gold;
+	color: royalblue;
 }
 
 #toc>li>a:hover{
 	border-radius: 20px;
-	background-color: #93a75e;
+	background-color: #ddeabe;
 	color: royalblue;
 }
 
